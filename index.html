@@ -30,33 +30,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(30,18,9,0.92
 .nav-logo-icon img{width:100%;height:100%;object-fit:contain}
 .nav-logo-text{color:var(--white);font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:0.02em}
 .nav-logo-text span{display:block;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:400;color:rgba(255,255,255,0.55);letter-spacing:0.08em;text-transform:uppercase}
-.about-section{background:var(--dark);padding:60px 24px}
-.about-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.about-img-col{display:flex;flex-direction:column;gap:12px}
-.about-logo-box{background:var(--cream);border-radius:16px;padding:24px;display:flex;align-items:center;justify-content:center}
-.about-logo-box img{width:100%;max-width:220px;height:auto;object-fit:contain}
-.about-machine-note{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6}
-.about-machine-note strong{color:var(--primary-light);display:block;margin-bottom:4px;font-size:11px;text-transform:uppercase;letter-spacing:0.06em}
-.about-text-col{}
-.about-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary-light);margin-bottom:12px}
-.about-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:16px}
-.about-title em{color:var(--primary-light);font-style:normal}
-.about-body{font-size:14px;color:rgba(255,255,255,0.65);line-height:1.8;font-weight:300;margin-bottom:20px}
-.about-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.afact{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:12px 14px}
-.afact-val{font-size:16px;font-weight:700;color:#fff;font-family:'Playfair Display',serif;margin-bottom:2px}
-.afact-lbl{font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.05em}
-.fssai-bar{margin-top:14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:10px}
-.fssai-logo{font-size:22px}
-.fssai-text{font-size:11px;color:rgba(255,255,255,0.55);line-height:1.6}
-.fssai-text strong{color:rgba(255,255,255,0.85);display:block;font-size:12px}
-@media(max-width:640px){.about-inner{grid-template-columns:1fr}.about-facts{grid-template-columns:1fr 1fr}}
 .nav-links{display:flex;gap:28px}
 .nav-links a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:0.02em;transition:color 0.2s}
 .nav-links a:hover{color:#fff}
 .nav-cart{position:relative;background:var(--primary);color:#fff;border:none;padding:8px 18px;border-radius:24px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:8px;transition:background 0.2s}
 .nav-cart:hover{background:var(--primary-light)}
 .nav-cart .cnt{background:rgba(255,255,255,0.25);min-width:18px;height:18px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;font-size:11px;padding:0 4px}
+
 .hero{height:100vh;min-height:560px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 40px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(160deg,rgba(30,18,9,0.88) 0%,rgba(140,46,5,0.72) 100%)}
@@ -75,10 +55,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(30,18,9,0.92
 .hero-badges{position:relative;z-index:1;display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:40px}
 .hbadge{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:8px 14px;color:rgba(255,255,255,0.8);font-size:12px;display:flex;align-items:center;gap:6px}
 .hbadge svg{width:14px;height:14px;flex-shrink:0}
+
 .trust-bar{background:var(--dark);padding:14px 24px}
 .trust-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:32px;flex-wrap:wrap}
 .trust-item{color:rgba(255,255,255,0.65);font-size:12px;display:flex;align-items:center;gap:7px}
 .trust-item svg{width:14px;height:14px;color:var(--primary-light);flex-shrink:0}
+
 .products-section{padding:72px 24px;max-width:1200px;margin:0 auto}
 .section-header{text-align:center;margin-bottom:48px}
 .section-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary);margin-bottom:10px}
@@ -91,10 +73,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(30,18,9,0.92
 .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
 .product-card{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid var(--border);transition:transform 0.2s,box-shadow 0.2s;display:flex;flex-direction:column}
 .product-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(181,64,10,0.12)}
-.product-card.hidden{display:none}
 .prod-img-wrap{position:relative;height:200px;overflow:hidden;background:var(--cream)}
 .prod-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s}
-.product-card:hover .prod-img-wrap img{transform:scale(1.05)}
 .prod-badge{position:absolute;top:10px;left:10px;font-size:10px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;padding:3px 9px;border-radius:10px}
 .badge-sale{background:#ffeaea;color:#a32d2d}
 .badge-fresh{background:#eaf3de;color:#27500a}
@@ -116,6 +96,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(30,18,9,0.92
 .add-btn{flex:1;padding:7px 12px;background:var(--primary);color:#fff;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:5px}
 .add-btn:hover{background:var(--primary-light)}
 .add-btn.added{background:#3B6D11}
+
 .cart-section{max-width:860px;margin:0 auto 80px;padding:0 24px}
 .cart-card{background:var(--white);border-radius:20px;border:1px solid var(--border);overflow:hidden}
 .cart-head{padding:18px 24px;background:var(--dark);display:flex;align-items:center;justify-content:space-between}
@@ -148,7 +129,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(30,18,9,0.92
 .cart-actions{padding:16px 24px;display:flex;gap:12px;align-items:center;justify-content:flex-end}
 .checkout-btn{padding:12px 28px;background:var(--primary);color:#fff;border:none;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:8px;transition:all 0.2s}
 .checkout-btn:hover{background:var(--primary-light)}
-.checkout-btn:disabled{background:#ccc;cursor:not-allowed}
+
 .checkout-form-section{display:none;max-width:860px;margin:0 auto 80px;padding:0 24px}
 .cf-card{background:var(--white);border-radius:20px;border:1px solid var(--border);overflow:hidden}
 .cf-head{padding:18px 24px;background:var(--dark)}
@@ -182,18 +163,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(30,18,9,0.92
 .popt-name{font-weight:600;font-size:13px}
 .popt-desc{font-size:11px;opacity:0.7}
 .order-review{background:var(--cream);border-radius:12px;padding:16px;margin-bottom:20px}
-.or-title{font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
 .or-row{display:flex;justify-content:space-between;font-size:13px;color:var(--mid);padding:4px 0}
 .or-divider{border:none;border-top:1px solid var(--cream-dark);margin:8px 0}
 .or-total{display:flex;justify-content:space-between;font-size:16px;font-weight:700;color:var(--dark);padding:4px 0}
 .or-total span:last-child{color:var(--primary);font-family:'Playfair Display',serif}
-.addr-confirm{background:var(--cream);border:1.5px solid #e5d5c5;border-radius:12px;padding:14px 16px;margin-bottom:20px}
-.ac-label{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.ac-text{font-size:13px;color:var(--dark);line-height:1.7}
 .place-btn{width:100%;padding:14px;background:var(--primary);color:#fff;border:none;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.2s;margin-top:8px}
 .place-btn:hover{background:var(--primary-light)}
 .btn-back{background:transparent;border:1.5px solid var(--border);border-radius:12px;padding:10px 20px;font-family:'DM Sans',sans-serif;font-size:13px;color:var(--mid);cursor:pointer;transition:all 0.2s;margin-bottom:16px;display:flex;align-items:center;gap:6px}
 .btn-back:hover{border-color:var(--primary);color:var(--primary)}
+
 .success-section{display:none;max-width:860px;margin:0 auto 80px;padding:0 24px}
 .success-card{background:var(--white);border-radius:20px;border:1px solid #c0dd97;overflow:hidden}
 .success-head{background:linear-gradient(135deg,#27500a,#3b6d11);padding:32px 24px;text-align:center}
@@ -215,27 +193,91 @@ nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(30,18,9,0.92
 .btn-shop-again:hover{background:var(--primary-light)}
 .btn-wa{flex:1;padding:12px;background:var(--green);color:#fff;border:none;border-radius:12px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;min-width:140px;text-decoration:none}
 .btn-wa:hover{background:#1da851}
+
 .wa-float{position:fixed;bottom:28px;right:28px;background:var(--green);color:#fff;border-radius:50px;padding:13px 22px;text-decoration:none;font-weight:600;font-size:14px;display:flex;align-items:center;gap:9px;z-index:998;box-shadow:0 4px 20px rgba(37,211,102,0.35);transition:transform 0.2s}
 .wa-float:hover{transform:translateY(-3px)}
 .wa-float svg{width:18px;height:18px}
+
 footer{background:var(--dark);color:rgba(255,255,255,0.5);padding:40px 24px 24px;font-size:12px;line-height:1.7}
 footer strong{color:rgba(255,255,255,0.8)}
-@media(max-width:640px){
-  .nav-links{display:none}
-  .fgrid{grid-template-columns:1fr}
-  .fgrid .full{grid-column:1}
-  .pay-opts{grid-template-columns:1fr}
-  .eta-grid{grid-template-columns:1fr 1fr}
-  .success-actions{flex-direction:column}
-  .hero-badges{display:none}
-}
+.about-section{background:var(--dark);padding:60px 24px}
+.about-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-img-col{display:flex;flex-direction:column;gap:12px}
+.about-logo-box{background:var(--cream);border-radius:16px;padding:24px;display:flex;align-items:center;justify-content:center}
+.about-logo-box img{width:100%;max-width:220px;height:auto;object-fit:contain}
+.about-machine-note{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6}
+.about-machine-note strong{color:var(--primary-light);display:block;margin-bottom:4px;font-size:11px;text-transform:uppercase;letter-spacing:0.06em}
+.about-text-col{}
+.about-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary-light);margin-bottom:12px}
+.about-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:16px}
+.about-title em{color:var(--primary-light);font-style:normal}
+.about-body{font-size:14px;color:rgba(255,255,255,0.65);line-height:1.8;font-weight:300;margin-bottom:20px}
+.about-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.afact{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:12px 14px}
+.afact-val{font-size:16px;font-weight:700;color:#fff;font-family:'Playfair Display',serif;margin-bottom:2px}
+.afact-lbl{font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.05em}
+.fssai-bar{margin-top:14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:10px}
+.fssai-logo{font-size:22px}
+.fssai-text{font-size:11px;color:rgba(255,255,255,0.55);line-height:1.6}
+.fssai-text strong{color:rgba(255,255,255,0.85);display:block;font-size:12px}
+@media(max-width:640px){.about-inner{grid-template-columns:1fr}.about-facts{grid-template-columns:1fr 1fr}.nav-links{display:none}.fgrid{grid-template-columns:1fr}.fgrid .full{grid-column:1}.pay-opts{grid-template-columns:1fr}.eta-grid{grid-template-columns:1fr 1fr}.success-actions{flex-direction:column}.hero-badges{display:none}}
 </style>
 </head>
 <body>
 
-<!-- NAV, HERO, TRUST BAR, PRODUCTS, ABOUT, CART sections same as original but kept intact -->
-<nav>...</nav> <!-- truncated for brevity, but full content in final HTML -->
-... (full HTML content continues)
+<nav><div class="nav-inner"><a class="nav-logo" href="#"><div class="nav-logo-icon"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23b5400a'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial'%3E🌶%3C/text%3E%3C/svg%3E" alt="logo"></div><div class="nav-logo-text">Masale Arpan<span>Gurugram · Est. April 2026</span></div></a><div class="nav-links"><a href="#products">Products</a><a href="#about">About Us</a><a href="#checkout">Cart</a><a href="https://wa.me/919266095118" target="_blank">WhatsApp</a></div><button class="nav-cart" onclick="scrollToCart()"><svg viewBox="0 0 20 20" fill="none" width="15" height="15"><path d="M1 1h3l2.5 10h9L18 5H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="17" r="1.2" fill="currentColor"/><circle cx="15" cy="17" r="1.2" fill="currentColor"/></svg> Cart <span class="cnt" id="nav-cnt">0</span></button></div></nav>
+
+<section class="hero"><div class="hero-bg"></div><div class="hero-overlay"></div><div class="hero-content"><div class="hero-eyebrow"><span class="hero-dot"></span>Hand-pounded · Cold-processed · Gurugram-made</div><h1>Spices as <em>Pure</em><br>as the Source</h1><p class="hero-sub">Crafted in Gurugram on our <strong style="color:rgba(255,255,255,0.9);font-weight:500">own hand-built machine</strong>. Farm-sourced from Rajasthan, Kerala & Kashmir. No fillers, no artificial colour — just honest, aromatic spices.</p><div class="hero-actions"><a href="#products" class="btn-primary">Shop Now →</a><a href="https://wa.me/919266095118" target="_blank" class="btn-outline">Chat on WhatsApp</a></div></div><div class="hero-badges"><div class="hbadge">✅ FSSAI Certified</div><div class="hbadge">🔧 Own machine · Own process</div><div class="hbadge">📅 Est. April 2026</div><div class="hbadge">🔒 Secure Checkout</div></div></section>
+
+<div class="trust-bar"><div class="trust-inner"><div class="trust-item">🏛 FSSAI Lic. 20826005001031</div><div class="trust-item">📍 Laxman Vihar, Gurugram</div><div class="trust-item">🚚 Free delivery above ₹499</div><div class="trust-item">⏱ Delivered in 3–5 days</div><div class="trust-item">🔄 Easy 7-day returns</div></div></div>
+
+<section class="products-section" id="products"><div class="section-header"><div class="section-eyebrow">Pure · Aromatic · Authentic</div><h2>Our Spice Collection</h2><p>Cold-pounded within 48 hours of dispatch to lock in maximum flavour and aroma</p></div><div class="filter-tabs"><button class="ftab active" onclick="filterProds(this,'all')">All Products</button><button class="ftab" onclick="filterProds(this,'haldi')">Haldi</button><button class="ftab" onclick="filterProds(this,'coriander')">Coriander</button><button class="ftab" onclick="filterProds(this,'mirch')">Lal Mirch</button></div><div class="products-grid" id="products-grid"></div></section>
+
+<section class="about-section" id="about"><div class="about-inner"><div class="about-img-col"><div class="about-logo-box"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23b5400a'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial'%3E🌶%3C/text%3E%3C/svg%3E" alt="logo" style="max-width:200px"></div><div class="about-machine-note"><strong>🔧 Our Own Machine</strong> This is not factory-made. We designed and built our own cold-pounding machine in-house — giving us full control over grind size, temperature, and freshness. Every batch is made with our hands, our tools, our pride.</div></div><div class="about-text-col"><div class="about-eyebrow">Our story</div><div class="about-title">Born in <em>Gurugram</em>,<br>Built by hand</div><div class="about-body">Masale Arpan started with a simple belief — real spices shouldn't have shortcuts. We set up right here in Laxman Vihar, Gurugram, built our own grinding machine from scratch, and got FSSAI certified to do this properly.<br><br>We source raw spices directly from farms in Rajasthan, Kerala and Kashmir. They're cleaned, cold-pounded in small batches, and packed fresh — no fillers, no artificial colour, no preservatives. When you open a pack, you'll know the difference.</div><div class="about-facts"><div class="afact"><div class="afact-val">April 2026</div><div class="afact-lbl">Established</div></div><div class="afact"><div class="afact-val">Gurugram</div><div class="afact-lbl">Haryana, India</div></div><div class="afact"><div class="afact-val">Own Machine</div><div class="afact-lbl">In-house built</div></div><div class="afact"><div class="afact-val">100% Natural</div><div class="afact-lbl">No additives ever</div></div></div><div class="fssai-bar"><div class="fssai-logo">🏛</div><div class="fssai-text"><strong>FSSAI Licensed — Lic. No. 20826005001031</strong>1040/31-A Laxman Vihar Phase-1, Near Shiv Mandir, Gurugram, Haryana</div></div></div></div></section>
+
+<section class="cart-section" id="checkout"><div class="cart-card"><div class="cart-head"><div class="cart-head-title">Your Cart <span class="cnt-pill" id="cart-cnt">0 items</span></div><button class="cart-clear" onclick="clearCart()">Clear all</button></div><div id="cart-body"><div class="cart-empty"><div class="cart-empty-icon">🛒</div>Your cart is empty. Browse our spice collection above.</div></div><div id="cart-foot" style="display:none"><div class="cart-summary-bar"><div class="cs-item"><div class="cs-val" id="cs-sub">₹0</div><div class="cs-lbl">Subtotal</div></div><div class="cs-item"><div class="cs-val" id="cs-del">₹49</div><div class="cs-lbl">Delivery</div></div><div class="cs-item"><div class="cs-val" id="cs-tot">₹0</div><div class="cs-lbl">Total payable</div></div></div><div class="promo-row"><input class="promo-input" id="promo-inp" placeholder="Have a promo code? Try MASALE10"><button class="promo-btn" onclick="applyPromo()">Apply</button></div><div class="promo-msg" id="promo-msg"></div><div class="cart-actions"><button class="checkout-btn" onclick="showCheckout()">Proceed to Checkout →</button></div></div></div></section>
+
+<section class="checkout-form-section" id="checkout-form"><div class="cf-card"><div class="cf-head"><h2>Complete Your Order</h2><p>Fill in your details — we'll dispatch within 24 hours</p></div><div class="steps-bar"><div class="step-item done">1 · Cart</div><div class="step-item active">2 · Contact</div><div class="step-item">3 · Address</div><div class="step-item">4 · Payment</div></div><div class="cf-body"><button class="btn-back" onclick="backToCart()">← Back to cart</button><div class="fblock"><div class="fb-title">Contact information</div><div class="fgrid"><div class="fgrp"><label>Full name *</label><input id="f-name" placeholder="e.g. Priya Sharma" oninput="clearErr('e-name')"><div class="ferr" id="e-name"></div></div><div class="fgrp"><label>Mobile number *</label><input id="f-phone" placeholder="10-digit mobile" maxlength="10" oninput="clearErr('e-phone')"><div class="ferr" id="e-phone"></div></div><div class="fgrp full"><label>Email address (for order confirmation)</label><input id="f-email" type="email" placeholder="you@example.com"><div class="ferr" id="e-email"></div></div></div></div><div class="fblock"><div class="fb-title">Delivery address</div><div class="fgrid"><div class="fgrp full"><label>Flat / House / Building *</label><input id="f-flat" placeholder="e.g. Flat 4B, Sunrise Apartments" oninput="clearErr('e-flat')"><div class="ferr" id="e-flat"></div></div><div class="fgrp full"><label>Street / Area / Locality *</label><input id="f-street" placeholder="e.g. MG Road, Karol Bagh" oninput="clearErr('e-street')"><div class="ferr" id="e-street"></div></div><div class="fgrp"><label>City *</label><input id="f-city" placeholder="e.g. New Delhi" oninput="clearErr('e-city')"><div class="ferr" id="e-city"></div></div><div class="fgrp"><label>State *</label><select id="f-state" onchange="clearErr('e-state')"><option value="">Select state</option><option>Andhra Pradesh</option><option>Bihar</option><option>Delhi</option><option>Gujarat</option><option>Haryana</option><option>Karnataka</option><option>Kerala</option><option>Madhya Pradesh</option><option>Maharashtra</option><option>Punjab</option><option>Rajasthan</option><option>Tamil Nadu</option><option>Telangana</option><option>Uttar Pradesh</option><option>West Bengal</option></select><div class="ferr" id="e-state"></div></div><div class="fgrp"><label>PIN code *</label><input id="f-pin" placeholder="6-digit PIN" maxlength="6" oninput="clearErr('e-pin')"><div class="ferr" id="e-pin"></div></div><div class="fgrp"><label>Landmark (optional)</label><input id="f-land" placeholder="Near post office, temple, etc."></div><div class="fgrp full"><label>Delivery instructions (optional)</label><textarea id="f-note" placeholder="Leave at door, ring bell twice, etc."></textarea></div></div></div><div class="fblock"><div class="fb-title">Payment method</div><div class="pay-opts"><div class="popt sel" onclick="selPay(this,'cod')"><div class="popt-radio"></div><span class="popt-icon">💵</span><div class="popt-text"><div class="popt-name">Cash on Delivery</div><div class="popt-desc">Pay when order arrives</div></div></div><div class="popt" onclick="selPay(this,'upi')"><div class="popt-radio"></div><span class="popt-icon">📱</span><div class="popt-text"><div class="popt-name">UPI / GPay / PhonePe</div><div class="popt-desc">Pay via QR or UPI ID</div></div></div><div class="popt" onclick="selPay(this,'bank')"><div class="popt-radio"></div><span class="popt-icon">🏦</span><div class="popt-text"><div class="popt-name">Bank Transfer (NEFT)</div><div class="popt-desc">Details sent after order</div></div></div><div class="popt" onclick="selPay(this,'wa')"><div class="popt-radio"></div><span class="popt-icon">💬</span><div class="popt-text"><div class="popt-name">Order via WhatsApp</div><div class="popt-desc">Chat directly with us</div></div></div></div></div><div class="fblock"><div class="fb-title">Order summary</div><div class="order-review" id="order-review"></div></div><button class="place-btn" onclick="placeOrder()">📦 Place Order</button></div></div></section>
+
+<section class="success-section" id="success-section"><div class="success-card"><div class="success-head"><div class="success-circle">✓</div><h2>Order Placed Successfully!</h2><p>Thank you! Your order has been received and will be dispatched within 24 hours.</p><div class="order-id" id="order-id">Order #MA-000000</div></div><div class="success-body"><div class="eta-grid"><div class="eta-item"><div class="eta-icon">📦</div><div class="eta-val">24 hrs</div><div class="eta-lbl">Dispatch time</div></div><div class="eta-item"><div class="eta-icon">🚚</div><div class="eta-val">3–5 days</div><div class="eta-lbl">Delivery estimate</div></div><div class="eta-item"><div class="eta-icon">✅</div><div class="eta-val">Confirmed</div><div class="eta-lbl">Order status</div></div></div><div class="success-addr"><div class="sa-label">Delivering to</div><div class="sa-text" id="success-addr-text"></div></div><div class="success-actions"><button class="btn-shop-again" onclick="shopAgain()">Shop Again</button><a class="btn-wa" id="wa-track" href="#" target="_blank">💬 Track via WhatsApp</a></div></div></div></section>
+
+<footer><div style="max-width:900px;margin:0 auto"><div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:20px"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23b5400a'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial'%3E🌶%3C/text%3E%3C/svg%3E" alt="logo" style="height:40px"><div><div style="color:#fff;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Masale Arpan</div><div style="font-size:11px;opacity:0.5">Pure Hand-Pounded Spices</div></div></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:18px"><div><div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.35);margin-bottom:8px">Our Address</div><div>1040/31-A, Laxman Vihar Phase-1<br>Near Shiv Mandir<br>Gurugram, Haryana — 122001</div></div><div><div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.35);margin-bottom:8px">Contact Us</div><div>📞 +91 92660 95118<br>✉ arpanment@gmail.com<br>💬 <a href="https://wa.me/919266095118" style="color:rgba(255,255,255,0.5)">WhatsApp Order</a></div></div><div><div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.35);margin-bottom:8px">Food Safety</div><div>FSSAI Lic. No.<br><strong>20826005001031</strong><br>Est. April 2026</div></div></div><div style="border-top:1px solid rgba(255,255,255,0.07);padding-top:14px;font-size:11px;text-align:center">© 2026 Masale Arpan. All rights reserved. Made with ❤️ in Gurugram</div></div></footer>
+<a href="https://wa.me/919266095118" class="wa-float" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.107 1.522 5.832L0 24l6.335-1.521A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.006-1.369l-.36-.214-3.761.983.999-3.671-.233-.376A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg> WhatsApp Order</a>
+
+<script>
+const PRODUCTS = [
+  {id:1,name:'Haldi Powder',weight:'50g',price:25,mrp:30,img:'https://i.ibb.co/93yYwWpy/Untitled-design-20260406-130958-0000.png',badge:'fresh',cat:'haldi',desc:'Pure turmeric, cold-pounded',rating:'4.9',reviews:'128'},
+  {id:2,name:'Coriander Powder',weight:'50g',price:20,mrp:25,img:'https://i.ibb.co/rRjf7tBg/Untitled-design-20260406-131846-0000.png',badge:'fresh',cat:'coriander',desc:'Aromatic & freshly ground',rating:'4.8',reviews:'94'},
+  {id:3,name:'Lal Mirch Powder',weight:'50g',price:35,mrp:42,img:'https://i.ibb.co/ynN6mW5B/Untitled-design-20260406-132404-0000.png',badge:'popular',cat:'mirch',desc:'Fiery Rajasthani red chilli',rating:'4.9',reviews:'211'},
+  {id:4,name:'Haldi Powder',weight:'100g',price:45,mrp:55,img:'https://i.ibb.co/b5p2d2Sv/Untitled-design-20260406-131147-0000.png',badge:'',cat:'haldi',desc:'Pure turmeric, cold-pounded',rating:'4.9',reviews:'186'},
+  {id:5,name:'Coriander Powder',weight:'100g',price:39,mrp:49,img:'https://i.ibb.co/7tjFqRXL/Untitled-design-20260406-132146-0000.png',badge:'',cat:'coriander',desc:'Aromatic & freshly ground',rating:'4.8',reviews:'77'},
+  {id:6,name:'Lal Mirch Powder',weight:'100g',price:65,mrp:79,img:'https://i.ibb.co/wqj0PZ2/Untitled-design-20260406-132507-0000.png',badge:'sale',cat:'mirch',desc:'Fiery Rajasthani red chilli',rating:'4.9',reviews:'143'},
+  {id:7,name:'Haldi Powder',weight:'250g',price:99,mrp:120,img:'https://i.ibb.co/mr4HPkTZ/Untitled-design-20260406-131326-0000.png',badge:'sale',cat:'haldi',desc:'Best value family pack',rating:'5.0',reviews:'302'},
+  {id:8,name:'Coriander Powder',weight:'250g',price:89,mrp:109,img:'https://i.ibb.co/7tjFqRXL/Untitled-design-20260406-132146-0000.png',badge:'sale',cat:'coriander',desc:'Best value family pack',rating:'4.8',reviews:'88'},
+  {id:9,name:'Lal Mirch Powder',weight:'250g',price:149,mrp:179,img:'https://i.ibb.co/jPCR4JC8/Untitled-design-20260406-132544-0000.png',badge:'popular',cat:'mirch',desc:'Fiery Rajasthani red chilli',rating:'4.9',reviews:'256'},
+];
+const OWNER_EMAIL = 'arpanment@gmail.com';
+const WA_NUMBER = '919266095118';
+let cart = {}, quantities = {}, promoApplied = false, promoDiscount = 0, payMethod = 'cod';
+PRODUCTS.forEach(p => { quantities[p.id] = 1; });
+function renderProducts(filter='all'){ const grid=document.getElementById('products-grid'); grid.innerHTML=''; PRODUCTS.forEach(p=>{ if(filter!=='all' && p.cat!==filter) return; const savings=p.mrp-p.price, pct=Math.round((savings/p.mrp)*100), inCart=cart[p.id]?cart[p.id].qty:0; const div=document.createElement('div'); div.className='product-card'; div.innerHTML=`<div class="prod-img-wrap"><img src="${p.img}" alt="${p.name} ${p.weight}" loading="lazy">${p.badge?`<div class="prod-badge badge-${p.badge}">${p.badge==='sale'?'Sale':p.badge==='fresh'?'Fresh':'Popular'}</div>`:''}</div><div class="prod-info"><div class="prod-name">${p.name} (${p.weight})</div><div class="prod-desc">${p.desc}</div><div class="prod-rating"><span class="stars">★★★★★</span> <span class="rating-cnt">${p.rating} (${p.reviews})</span></div><div class="prod-price-row"><span class="prod-price">₹${p.price}</span><span class="prod-mrp">₹${p.mrp}</span><span class="prod-savings">Save ${pct}%</span></div><div class="qty-row"><button class="qbtn" onclick="changeQty(${p.id},-1)">−</button><span class="qnum" id="qty-${p.id}">${quantities[p.id]}</span><button class="qbtn" onclick="changeQty(${p.id},1)">+</button><button class="add-btn ${inCart?'added':''}" id="abtn-${p.id}" onclick="addToCart(${p.id})">${inCart?'✓ Added':'+ Add to Cart'}</button></div></div>`; grid.appendChild(div); }); }
+function changeQty(id,delta){ quantities[id]=Math.max(1,(quantities[id]||1)+delta); const el=document.getElementById('qty-'+id); if(el) el.textContent=quantities[id]; }
+function addToCart(id){ const p=PRODUCTS.find(x=>x.id===id); const qty=quantities[id]||1; if(cart[id]) cart[id].qty+=qty; else cart[id]={p,qty}; const btn=document.getElementById('abtn-'+id); if(btn){btn.textContent='✓ Added';btn.classList.add('added');} renderCart(); }
+function renderCart(){ const ids=Object.keys(cart); const cnt=ids.reduce((s,k)=>s+cart[k].qty,0); document.getElementById('nav-cnt').textContent=cnt; document.getElementById('cart-cnt').textContent=cnt+' item'+(cnt!==1?'s':''); const body=document.getElementById('cart-body'); const foot=document.getElementById('cart-foot'); if(!ids.length){ body.innerHTML='<div class="cart-empty"><div class="cart-empty-icon">🛒</div>Your cart is empty. Browse our spice collection above.</div>'; foot.style.display='none'; return; } foot.style.display=''; let html='', sub=0; ids.forEach(k=>{ const {p,qty}=cart[k]; const line=p.price*qty; sub+=line; html+=`<div class="cart-item"><img class="ci-img" src="${p.img}" alt="${p.name}"><div class="ci-info"><div class="ci-name">${p.name} (${p.weight})</div><div class="ci-unit">${p.desc}</div></div><div class="ci-qty">× ${qty}</div><div class="ci-price">₹${line}</div><button class="ci-del" onclick="removeItem(${p.id})">✕</button></div>`; }); body.innerHTML=html; const del=sub>=499?0:49; const disc=promoApplied?promoDiscount:0; const tot=sub+del-disc; document.getElementById('cs-sub').textContent='₹'+sub; document.getElementById('cs-del').textContent=del===0?'FREE':'₹'+del; document.getElementById('cs-tot').textContent='₹'+tot; updateOrderReview(sub,del,disc,tot); }
+function updateOrderReview(sub,del,disc,tot){ const el=document.getElementById('order-review'); if(!el)return; let rows=Object.keys(cart).map(k=>`<div class="or-row"><span>${cart[k].p.name} (${cart[k].p.weight}) × ${cart[k].qty}</span><span>₹${cart[k].p.price*cart[k].qty}</span></div>`).join(''); rows+=`<hr class="or-divider"><div class="or-row"><span>Subtotal</span><span>₹${sub}</span></div><div class="or-row"><span>Delivery</span><span>${del===0?'FREE':'₹'+del}</span></div>`; if(disc>0) rows+=`<div class="or-row"><span>Promo discount</span><span style="color:#27500a">−₹${disc}</span></div>`; rows+=`<hr class="or-divider"><div class="or-total"><span>Total payable</span><span>₹${tot}</span></div>`; el.innerHTML=rows; }
+function removeItem(id){ delete cart[id]; const btn=document.getElementById('abtn-'+id); if(btn){btn.textContent='+ Add to Cart';btn.classList.remove('added');} renderCart(); }
+function clearCart(){ cart={}; PRODUCTS.forEach(p=>{ const btn=document.getElementById('abtn-'+p.id); if(btn){btn.textContent='+ Add to Cart';btn.classList.remove('added');} }); renderCart(); }
+function applyPromo(){ const code=document.getElementById('promo-inp').value.trim().toUpperCase(); const msg=document.getElementById('promo-msg'); if(code==='MASALE10'){ promoApplied=true; const sub=Object.keys(cart).reduce((s,k)=>s+cart[k].p.price*cart[k].qty,0); promoDiscount=Math.round(sub*0.10); msg.style.display='block'; msg.style.color='#27500a'; msg.textContent='✓ Promo applied! You save ₹'+promoDiscount; } else if(code==='WELCOME50'){ promoApplied=true; promoDiscount=50; msg.style.display='block'; msg.style.color='#27500a'; msg.textContent='✓ Welcome offer applied! ₹50 off'; } else { promoApplied=false; promoDiscount=0; msg.style.display='block'; msg.style.color='#a32d2d'; msg.textContent='Invalid promo code.'; } renderCart(); }
+function filterProds(el,cat){ document.querySelectorAll('.ftab').forEach(t=>t.classList.remove('active')); el.classList.add('active'); renderProducts(cat); }
+function scrollToCart(){ document.getElementById('checkout').scrollIntoView({behavior:'smooth'}); }
+function showCheckout(){ if(!Object.keys(cart).length) return; document.getElementById('checkout-form').style.display='block'; document.getElementById('checkout-form').scrollIntoView({behavior:'smooth'}); }
+function backToCart(){ document.getElementById('checkout-form').style.display='none'; document.getElementById('checkout').scrollIntoView({behavior:'smooth'}); }
+function selPay(el,method){ document.querySelectorAll('.popt').forEach(o=>o.classList.remove('sel')); el.classList.add('sel'); payMethod=method; }
+function clearErr(id){ document.getElementById(id).textContent=''; }
+function validate(){ let ok=true; const req=[['f-name','e-name','Please enter your full name'],['f-phone','e-phone','Enter a valid 10-digit mobile number'],['f-flat','e-flat','Enter your flat/house details'],['f-street','e-street','Enter your street/area'],['f-city','e-city','Enter your city'],['f-state','e-state','Select your state'],['f-pin','e-pin','Enter a valid 6-digit PIN code']]; req.forEach(([fid,eid,msg])=>{ const val=document.getElementById(fid).value.trim(); const err=document.getElementById(eid); if(!val){ err.textContent=msg; ok=false; } else if(fid==='f-phone' && !/^\d{10}$/.test(val)){ err.textContent='Enter a valid 10-digit number'; ok=false; } else if(fid==='f-pin' && !/^\d{6}$/.test(val)){ err.textContent='Enter a valid 6-digit PIN'; ok=false; } }); return ok; }
+function placeOrder(){ if(!validate()) return; const name=document.getElementById('f-name').value.trim(); const phone=document.getElementById('f-phone').value.trim(); const email=document.getElementById('f-email').value.trim(); const flat=document.getElementById('f-flat').value.trim(); const street=document.getElementById('f-street').value.trim(); const city=document.getElementById('f-city').value.trim(); const state=document.getElementById('f-state').value; const pin=document.getElementById('f-pin').value.trim(); const land=document.getElementById('f-land').value.trim(); const note=document.getElementById('f-note').value.trim(); const addrLine=`${flat}, ${street}, ${city}, ${state} – ${pin}${land?', Near '+land:''}`; const ids=Object.keys(cart); const sub=ids.reduce((s,k)=>s+cart[k].p.price*cart[k].qty,0); const del=sub>=499?0:49; const disc=promoApplied?promoDiscount:0; const tot=sub+del-disc; const ordId='MA-'+Date.now().toString().slice(-6); let body=`New Order — Masale Arpan\n\nOrder ID: ${ordId}\n\nCustomer Details:\nName: ${name}\nPhone: ${phone}\nEmail: ${email||'Not provided'}\n\nDelivery Address:\n${addrLine}\n${note?'Note: '+note:''}\n\nItems Ordered:\n`; ids.forEach(k=>{body+=`- ${cart[k].p.name} (${cart[k].p.weight}) × ${cart[k].qty} = ₹${cart[k].p.price*cart[k].qty}\n`}); body+=`\nSubtotal: ₹${sub}\nDelivery: ${del===0?'FREE':'₹'+del}`; if(disc>0)body+=`\nPromo Discount: -₹${disc}`; body+=`\nTotal: ₹${tot}\nPayment Method: ${payMethod.toUpperCase()}\n\nThank you!`; if(payMethod==='wa'){ const waMsg=encodeURIComponent(`Hi Masale Arpan! 🌶\nI'd like to place an order.\n\nOrder ID: ${ordId}\nName: ${name}\nPhone: ${phone}\nAddress: ${addrLine}\n\nItems:\n`+ids.map(k=>`- ${cart[k].p.name} (${cart[k].p.weight}) × ${cart[k].qty} = ₹${cart[k].p.price*cart[k].qty}`).join('\n')+`\n\nTotal: ₹${tot}`); window.open(`https://wa.me/${WA_NUMBER}?text=${waMsg}`,'_blank'); } else { window.location.href=`mailto:${OWNER_EMAIL}?subject=New Order ${ordId} from ${name}&body=${encodeURIComponent(body)}`; } document.getElementById('order-id').textContent='Order #'+ordId; document.getElementById('success-addr-text').textContent=addrLine; const waTrack=document.getElementById('wa-track'); waTrack.href=`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hi! I placed an order '+ordId+'. Can you share the tracking update?')}`; document.getElementById('checkout-form').style.display='none'; document.getElementById('success-section').style.display='block'; document.getElementById('success-section').scrollIntoView({behavior:'smooth'}); cart={}; renderCart(); }
+function shopAgain(){ document.getElementById('success-section').style.display='none'; window.scrollTo({top:0,behavior:'smooth'}); }
+renderProducts('all');
+</script>
 </body>
 </html>
-
