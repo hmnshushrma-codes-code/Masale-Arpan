@@ -6,6 +6,7 @@
 <title>Masale Arpan | Pure Hand-Pounded Spices — Gurugram</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+/* ========== ALL STYLES SAME AS BEFORE (unchanged) ========== */
 :root {
   --primary: #b5400a;
   --primary-dark: #8c2e05;
@@ -26,7 +27,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);
 nav{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(30,18,9,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.07)}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nav-logo-icon{width:40px;height:40px;border-radius:8px;overflow:hidden;flex-shrink:0;background:var(--cream)}
+.nav-logo-icon{width:40px;height:40px;border-radius:8px;overflow:hidden;flex-shrink:0;background:var(--cream);display:flex;align-items:center;justify-content:center}
 .nav-logo-icon img{width:100%;height:100%;object-fit:contain}
 .nav-logo-text{color:var(--white);font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:0.02em}
 .nav-logo-text span{display:block;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:400;color:rgba(255,255,255,0.55);letter-spacing:0.08em;text-transform:uppercase}
@@ -207,6 +208,7 @@ footer strong{color:rgba(255,255,255,0.8)}
 .about-logo-box img{width:100%;max-width:220px;height:auto;object-fit:contain}
 .about-machine-note{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:12px 16px;font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6}
 .about-machine-note strong{color:var(--primary-light);display:block;margin-bottom:4px;font-size:11px;text-transform:uppercase;letter-spacing:0.06em}
+.about-machine-note img{max-width:100%;margin-top:8px;border-radius:8px}
 .about-text-col{}
 .about-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary-light);margin-bottom:12px}
 .about-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:16px}
@@ -225,7 +227,7 @@ footer strong{color:rgba(255,255,255,0.8)}
 </head>
 <body>
 
-<nav><div class="nav-inner"><a class="nav-logo" href="#"><div class="nav-logo-icon"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23b5400a'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial'%3E🌶%3C/text%3E%3C/svg%3E" alt="logo"></div><div class="nav-logo-text">Masale Arpan<span>Gurugram · Est. April 2026</span></div></a><div class="nav-links"><a href="#products">Products</a><a href="#about">About Us</a><a href="#checkout">Cart</a><a href="https://wa.me/919266095118" target="_blank">WhatsApp</a></div><button class="nav-cart" onclick="scrollToCart()"><svg viewBox="0 0 20 20" fill="none" width="15" height="15"><path d="M1 1h3l2.5 10h9L18 5H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="17" r="1.2" fill="currentColor"/><circle cx="15" cy="17" r="1.2" fill="currentColor"/></svg> Cart <span class="cnt" id="nav-cnt">0</span></button></div></nav>
+<nav><div class="nav-inner"><a class="nav-logo" href="#"><div class="nav-logo-icon"><img src="https://i.ibb.co/G46tDhKk/Masale-Arpanlogo.jpg" alt="Masale Arpan Logo"></div><div class="nav-logo-text">Masale Arpan<span>Gurugram · Est. April 2026</span></div></a><div class="nav-links"><a href="#products">Products</a><a href="#about">About Us</a><a href="#checkout">Cart</a><a href="https://wa.me/919266095118" target="_blank">WhatsApp</a></div><button class="nav-cart" onclick="scrollToCart()"><svg viewBox="0 0 20 20" fill="none" width="15" height="15"><path d="M1 1h3l2.5 10h9L18 5H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="17" r="1.2" fill="currentColor"/><circle cx="15" cy="17" r="1.2" fill="currentColor"/></svg> Cart <span class="cnt" id="nav-cnt">0</span></button></div></nav>
 
 <section class="hero"><div class="hero-bg"></div><div class="hero-overlay"></div><div class="hero-content"><div class="hero-eyebrow"><span class="hero-dot"></span>Hand-pounded · Cold-processed · Gurugram-made</div><h1>Spices as <em>Pure</em><br>as the Source</h1><p class="hero-sub">Crafted in Gurugram on our <strong style="color:rgba(255,255,255,0.9);font-weight:500">own hand-built machine</strong>. Farm-sourced from Rajasthan, Kerala & Kashmir. No fillers, no artificial colour — just honest, aromatic spices.</p><div class="hero-actions"><a href="#products" class="btn-primary">Shop Now →</a><a href="https://wa.me/919266095118" target="_blank" class="btn-outline">Chat on WhatsApp</a></div></div><div class="hero-badges"><div class="hbadge">✅ FSSAI Certified</div><div class="hbadge">🔧 Own machine · Own process</div><div class="hbadge">📅 Est. April 2026</div><div class="hbadge">🔒 Secure Checkout</div></div></section>
 
@@ -233,7 +235,7 @@ footer strong{color:rgba(255,255,255,0.8)}
 
 <section class="products-section" id="products"><div class="section-header"><div class="section-eyebrow">Pure · Aromatic · Authentic</div><h2>Our Spice Collection</h2><p>Cold-pounded within 48 hours of dispatch to lock in maximum flavour and aroma</p></div><div class="filter-tabs"><button class="ftab active" onclick="filterProds(this,'all')">All Products</button><button class="ftab" onclick="filterProds(this,'haldi')">Haldi</button><button class="ftab" onclick="filterProds(this,'coriander')">Coriander</button><button class="ftab" onclick="filterProds(this,'mirch')">Lal Mirch</button></div><div class="products-grid" id="products-grid"></div></section>
 
-<section class="about-section" id="about"><div class="about-inner"><div class="about-img-col"><div class="about-logo-box"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23b5400a'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial'%3E🌶%3C/text%3E%3C/svg%3E" alt="logo" style="max-width:200px"></div><div class="about-machine-note"><strong>🔧 Our Own Machine</strong> This is not factory-made. We designed and built our own cold-pounding machine in-house — giving us full control over grind size, temperature, and freshness. Every batch is made with our hands, our tools, our pride.</div></div><div class="about-text-col"><div class="about-eyebrow">Our story</div><div class="about-title">Born in <em>Gurugram</em>,<br>Built by hand</div><div class="about-body">Masale Arpan started with a simple belief — real spices shouldn't have shortcuts. We set up right here in Laxman Vihar, Gurugram, built our own grinding machine from scratch, and got FSSAI certified to do this properly.<br><br>We source raw spices directly from farms in Rajasthan, Kerala and Kashmir. They're cleaned, cold-pounded in small batches, and packed fresh — no fillers, no artificial colour, no preservatives. When you open a pack, you'll know the difference.</div><div class="about-facts"><div class="afact"><div class="afact-val">April 2026</div><div class="afact-lbl">Established</div></div><div class="afact"><div class="afact-val">Gurugram</div><div class="afact-lbl">Haryana, India</div></div><div class="afact"><div class="afact-val">Own Machine</div><div class="afact-lbl">In-house built</div></div><div class="afact"><div class="afact-val">100% Natural</div><div class="afact-lbl">No additives ever</div></div></div><div class="fssai-bar"><div class="fssai-logo">🏛</div><div class="fssai-text"><strong>FSSAI Licensed — Lic. No. 20826005001031</strong>1040/31-A Laxman Vihar Phase-1, Near Shiv Mandir, Gurugram, Haryana</div></div></div></div></section>
+<section class="about-section" id="about"><div class="about-inner"><div class="about-img-col"><div class="about-logo-box"><img src="https://i.ibb.co/G46tDhKk/Masale-Arpanlogo.jpg" alt="Masale Arpan Logo" style="max-width:200px"></div><div class="about-machine-note"><strong>🔧 Our Own Machine</strong> This is not factory-made. We designed and built our own cold-pounding machine in-house — giving us full control over grind size, temperature, and freshness. Every batch is made with our hands, our tools, our pride.<br><img src="https://i.ibb.co/KzSGv71x/1774161291138.png" alt="Our custom-built machine" style="width:100%; margin-top:10px; border-radius:8px;"></div></div><div class="about-text-col"><div class="about-eyebrow">Our story</div><div class="about-title">Born in <em>Gurugram</em>,<br>Built by hand</div><div class="about-body">Masale Arpan started with a simple belief — real spices shouldn't have shortcuts. We set up right here in Laxman Vihar, Gurugram, built our own grinding machine from scratch, and got FSSAI certified to do this properly.<br><br>We source raw spices directly from farms in Rajasthan, Kerala and Kashmir. They're cleaned, cold-pounded in small batches, and packed fresh — no fillers, no artificial colour, no preservatives. When you open a pack, you'll know the difference.</div><div class="about-facts"><div class="afact"><div class="afact-val">April 2026</div><div class="afact-lbl">Established</div></div><div class="afact"><div class="afact-val">Gurugram</div><div class="afact-lbl">Haryana, India</div></div><div class="afact"><div class="afact-val">Own Machine</div><div class="afact-lbl">In-house built</div></div><div class="afact"><div class="afact-val">100% Natural</div><div class="afact-lbl">No additives ever</div></div></div><div class="fssai-bar"><div class="fssai-logo">🏛</div><div class="fssai-text"><strong>FSSAI Licensed — Lic. No. 20826005001031</strong>1040/31-A Laxman Vihar Phase-1, Near Shiv Mandir, Gurugram, Haryana</div></div></div></div></section>
 
 <section class="cart-section" id="checkout"><div class="cart-card"><div class="cart-head"><div class="cart-head-title">Your Cart <span class="cnt-pill" id="cart-cnt">0 items</span></div><button class="cart-clear" onclick="clearCart()">Clear all</button></div><div id="cart-body"><div class="cart-empty"><div class="cart-empty-icon">🛒</div>Your cart is empty. Browse our spice collection above.</div></div><div id="cart-foot" style="display:none"><div class="cart-summary-bar"><div class="cs-item"><div class="cs-val" id="cs-sub">₹0</div><div class="cs-lbl">Subtotal</div></div><div class="cs-item"><div class="cs-val" id="cs-del">₹49</div><div class="cs-lbl">Delivery</div></div><div class="cs-item"><div class="cs-val" id="cs-tot">₹0</div><div class="cs-lbl">Total payable</div></div></div><div class="promo-row"><input class="promo-input" id="promo-inp" placeholder="Have a promo code? Try MASALE10"><button class="promo-btn" onclick="applyPromo()">Apply</button></div><div class="promo-msg" id="promo-msg"></div><div class="cart-actions"><button class="checkout-btn" onclick="showCheckout()">Proceed to Checkout →</button></div></div></div></section>
 
@@ -241,7 +243,7 @@ footer strong{color:rgba(255,255,255,0.8)}
 
 <section class="success-section" id="success-section"><div class="success-card"><div class="success-head"><div class="success-circle">✓</div><h2>Order Placed Successfully!</h2><p>Thank you! Your order has been received and will be dispatched within 24 hours.</p><div class="order-id" id="order-id">Order #MA-000000</div></div><div class="success-body"><div class="eta-grid"><div class="eta-item"><div class="eta-icon">📦</div><div class="eta-val">24 hrs</div><div class="eta-lbl">Dispatch time</div></div><div class="eta-item"><div class="eta-icon">🚚</div><div class="eta-val">3–5 days</div><div class="eta-lbl">Delivery estimate</div></div><div class="eta-item"><div class="eta-icon">✅</div><div class="eta-val">Confirmed</div><div class="eta-lbl">Order status</div></div></div><div class="success-addr"><div class="sa-label">Delivering to</div><div class="sa-text" id="success-addr-text"></div></div><div class="success-actions"><button class="btn-shop-again" onclick="shopAgain()">Shop Again</button><a class="btn-wa" id="wa-track" href="#" target="_blank">💬 Track via WhatsApp</a></div></div></div></section>
 
-<footer><div style="max-width:900px;margin:0 auto"><div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:20px"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23b5400a'/%3E%3Ctext x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial'%3E🌶%3C/text%3E%3C/svg%3E" alt="logo" style="height:40px"><div><div style="color:#fff;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Masale Arpan</div><div style="font-size:11px;opacity:0.5">Pure Hand-Pounded Spices</div></div></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:18px"><div><div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.35);margin-bottom:8px">Our Address</div><div>1040/31-A, Laxman Vihar Phase-1<br>Near Shiv Mandir<br>Gurugram, Haryana — 122001</div></div><div><div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.35);margin-bottom:8px">Contact Us</div><div>📞 +91 92660 95118<br>✉ arpanment@gmail.com<br>💬 <a href="https://wa.me/919266095118" style="color:rgba(255,255,255,0.5)">WhatsApp Order</a></div></div><div><div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.35);margin-bottom:8px">Food Safety</div><div>FSSAI Lic. No.<br><strong>20826005001031</strong><br>Est. April 2026</div></div></div><div style="border-top:1px solid rgba(255,255,255,0.07);padding-top:14px;font-size:11px;text-align:center">© 2026 Masale Arpan. All rights reserved. Made with ❤️ in Gurugram</div></div></footer>
+<footer><div style="max-width:900px;margin:0 auto"><div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:20px"><img src="https://i.ibb.co/G46tDhKk/Masale-Arpanlogo.jpg" alt="logo" style="height:40px; object-fit:contain"><div><div style="color:#fff;font-family:'Playfair Display',serif;font-size:16px;font-weight:700">Masale Arpan</div><div style="font-size:11px;opacity:0.5">Pure Hand-Pounded Spices</div></div></div><div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:18px"><div><div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.35);margin-bottom:8px">Our Address</div><div>1040/31-A, Laxman Vihar Phase-1<br>Near Shiv Mandir<br>Gurugram, Haryana — 122001</div></div><div><div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.35);margin-bottom:8px">Contact Us</div><div>📞 +91 92660 95118<br>✉ arpanment@gmail.com<br>💬 <a href="https://wa.me/919266095118" style="color:rgba(255,255,255,0.5)">WhatsApp Order</a></div></div><div><div style="font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.35);margin-bottom:8px">Food Safety</div><div>FSSAI Lic. No.<br><strong>20826005001031</strong><br>Est. April 2026</div></div></div><div style="border-top:1px solid rgba(255,255,255,0.07);padding-top:14px;font-size:11px;text-align:center">© 2026 Masale Arpan. All rights reserved. Made with ❤️ in Gurugram</div></div></footer>
 <a href="https://wa.me/919266095118" class="wa-float" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.107 1.522 5.832L0 24l6.335-1.521A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 01-5.006-1.369l-.36-.214-3.761.983.999-3.671-.233-.376A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg> WhatsApp Order</a>
 
 <script>
@@ -258,8 +260,11 @@ const PRODUCTS = [
 ];
 const OWNER_EMAIL = 'arpanment@gmail.com';
 const WA_NUMBER = '919266095118';
+const WEB3FORMS_KEY = '7403e750-e0e1-47ad-af49-2d4d10ef4f2b';   // Your active key
+
 let cart = {}, quantities = {}, promoApplied = false, promoDiscount = 0, payMethod = 'cod';
 PRODUCTS.forEach(p => { quantities[p.id] = 1; });
+
 function renderProducts(filter='all'){ const grid=document.getElementById('products-grid'); grid.innerHTML=''; PRODUCTS.forEach(p=>{ if(filter!=='all' && p.cat!==filter) return; const savings=p.mrp-p.price, pct=Math.round((savings/p.mrp)*100), inCart=cart[p.id]?cart[p.id].qty:0; const div=document.createElement('div'); div.className='product-card'; div.innerHTML=`<div class="prod-img-wrap"><img src="${p.img}" alt="${p.name} ${p.weight}" loading="lazy">${p.badge?`<div class="prod-badge badge-${p.badge}">${p.badge==='sale'?'Sale':p.badge==='fresh'?'Fresh':'Popular'}</div>`:''}</div><div class="prod-info"><div class="prod-name">${p.name} (${p.weight})</div><div class="prod-desc">${p.desc}</div><div class="prod-rating"><span class="stars">★★★★★</span> <span class="rating-cnt">${p.rating} (${p.reviews})</span></div><div class="prod-price-row"><span class="prod-price">₹${p.price}</span><span class="prod-mrp">₹${p.mrp}</span><span class="prod-savings">Save ${pct}%</span></div><div class="qty-row"><button class="qbtn" onclick="changeQty(${p.id},-1)">−</button><span class="qnum" id="qty-${p.id}">${quantities[p.id]}</span><button class="qbtn" onclick="changeQty(${p.id},1)">+</button><button class="add-btn ${inCart?'added':''}" id="abtn-${p.id}" onclick="addToCart(${p.id})">${inCart?'✓ Added':'+ Add to Cart'}</button></div></div>`; grid.appendChild(div); }); }
 function changeQty(id,delta){ quantities[id]=Math.max(1,(quantities[id]||1)+delta); const el=document.getElementById('qty-'+id); if(el) el.textContent=quantities[id]; }
 function addToCart(id){ const p=PRODUCTS.find(x=>x.id===id); const qty=quantities[id]||1; if(cart[id]) cart[id].qty+=qty; else cart[id]={p,qty}; const btn=document.getElementById('abtn-'+id); if(btn){btn.textContent='✓ Added';btn.classList.add('added');} renderCart(); }
@@ -275,7 +280,80 @@ function backToCart(){ document.getElementById('checkout-form').style.display='n
 function selPay(el,method){ document.querySelectorAll('.popt').forEach(o=>o.classList.remove('sel')); el.classList.add('sel'); payMethod=method; }
 function clearErr(id){ document.getElementById(id).textContent=''; }
 function validate(){ let ok=true; const req=[['f-name','e-name','Please enter your full name'],['f-phone','e-phone','Enter a valid 10-digit mobile number'],['f-flat','e-flat','Enter your flat/house details'],['f-street','e-street','Enter your street/area'],['f-city','e-city','Enter your city'],['f-state','e-state','Select your state'],['f-pin','e-pin','Enter a valid 6-digit PIN code']]; req.forEach(([fid,eid,msg])=>{ const val=document.getElementById(fid).value.trim(); const err=document.getElementById(eid); if(!val){ err.textContent=msg; ok=false; } else if(fid==='f-phone' && !/^\d{10}$/.test(val)){ err.textContent='Enter a valid 10-digit number'; ok=false; } else if(fid==='f-pin' && !/^\d{6}$/.test(val)){ err.textContent='Enter a valid 6-digit PIN'; ok=false; } }); return ok; }
-function placeOrder(){ if(!validate()) return; const name=document.getElementById('f-name').value.trim(); const phone=document.getElementById('f-phone').value.trim(); const email=document.getElementById('f-email').value.trim(); const flat=document.getElementById('f-flat').value.trim(); const street=document.getElementById('f-street').value.trim(); const city=document.getElementById('f-city').value.trim(); const state=document.getElementById('f-state').value; const pin=document.getElementById('f-pin').value.trim(); const land=document.getElementById('f-land').value.trim(); const note=document.getElementById('f-note').value.trim(); const addrLine=`${flat}, ${street}, ${city}, ${state} – ${pin}${land?', Near '+land:''}`; const ids=Object.keys(cart); const sub=ids.reduce((s,k)=>s+cart[k].p.price*cart[k].qty,0); const del=sub>=499?0:49; const disc=promoApplied?promoDiscount:0; const tot=sub+del-disc; const ordId='MA-'+Date.now().toString().slice(-6); let body=`New Order — Masale Arpan\n\nOrder ID: ${ordId}\n\nCustomer Details:\nName: ${name}\nPhone: ${phone}\nEmail: ${email||'Not provided'}\n\nDelivery Address:\n${addrLine}\n${note?'Note: '+note:''}\n\nItems Ordered:\n`; ids.forEach(k=>{body+=`- ${cart[k].p.name} (${cart[k].p.weight}) × ${cart[k].qty} = ₹${cart[k].p.price*cart[k].qty}\n`}); body+=`\nSubtotal: ₹${sub}\nDelivery: ${del===0?'FREE':'₹'+del}`; if(disc>0)body+=`\nPromo Discount: -₹${disc}`; body+=`\nTotal: ₹${tot}\nPayment Method: ${payMethod.toUpperCase()}\n\nThank you!`; if(payMethod==='wa'){ const waMsg=encodeURIComponent(`Hi Masale Arpan! 🌶\nI'd like to place an order.\n\nOrder ID: ${ordId}\nName: ${name}\nPhone: ${phone}\nAddress: ${addrLine}\n\nItems:\n`+ids.map(k=>`- ${cart[k].p.name} (${cart[k].p.weight}) × ${cart[k].qty} = ₹${cart[k].p.price*cart[k].qty}`).join('\n')+`\n\nTotal: ₹${tot}`); window.open(`https://wa.me/${WA_NUMBER}?text=${waMsg}`,'_blank'); } else { window.location.href=`mailto:${OWNER_EMAIL}?subject=New Order ${ordId} from ${name}&body=${encodeURIComponent(body)}`; } document.getElementById('order-id').textContent='Order #'+ordId; document.getElementById('success-addr-text').textContent=addrLine; const waTrack=document.getElementById('wa-track'); waTrack.href=`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hi! I placed an order '+ordId+'. Can you share the tracking update?')}`; document.getElementById('checkout-form').style.display='none'; document.getElementById('success-section').style.display='block'; document.getElementById('success-section').scrollIntoView({behavior:'smooth'}); cart={}; renderCart(); }
+
+async function placeOrder() {
+  if(!validate()) return;
+  const name = document.getElementById('f-name').value.trim();
+  const phone = document.getElementById('f-phone').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const flat = document.getElementById('f-flat').value.trim();
+  const street = document.getElementById('f-street').value.trim();
+  const city = document.getElementById('f-city').value.trim();
+  const state = document.getElementById('f-state').value;
+  const pin = document.getElementById('f-pin').value.trim();
+  const land = document.getElementById('f-land').value.trim();
+  const note = document.getElementById('f-note').value.trim();
+  const addrLine = `${flat}, ${street}, ${city}, ${state} – ${pin}${land ? ', Near '+land : ''}`;
+  const ids = Object.keys(cart);
+  const sub = ids.reduce((s,k)=>s + cart[k].p.price * cart[k].qty, 0);
+  const del = sub >= 499 ? 0 : 49;
+  const disc = promoApplied ? promoDiscount : 0;
+  const tot = sub + del - disc;
+  const ordId = 'MA-'+Date.now().toString().slice(-6);
+
+  // Build items string for email
+  let itemsText = '';
+  ids.forEach(k => {
+    itemsText += `${cart[k].p.name} (${cart[k].p.weight}) × ${cart[k].qty} = ₹${cart[k].p.price * cart[k].qty}\n`;
+  });
+
+  // Send order via Web3Forms (reliable email to your Gmail)
+  if (WEB3FORMS_KEY && WEB3FORMS_KEY !== 'YOUR_WEB3FORMS_ACCESS_KEY') {
+    const formData = new FormData();
+    formData.append('access_key', WEB3FORMS_KEY);
+    formData.append('subject', `New Order ${ordId} from ${name}`);
+    formData.append('from_name', name);
+    formData.append('email', email || 'customer@example.com');
+    formData.append('phone', phone);
+    formData.append('order_id', ordId);
+    formData.append('address', addrLine);
+    formData.append('items', itemsText);
+    formData.append('subtotal', `₹${sub}`);
+    formData.append('delivery', del===0 ? 'FREE' : `₹${del}`);
+    formData.append('discount', disc>0 ? `-₹${disc}` : '₹0');
+    formData.append('total', `₹${tot}`);
+    formData.append('payment_method', payMethod.toUpperCase());
+    formData.append('message', `Order details:\n\nItems:\n${itemsText}\n\nAddress: ${addrLine}\n${note ? 'Note: '+note : ''}\n\nPayment: ${payMethod.toUpperCase()}\nTotal: ₹${tot}`);
+
+    try {
+      await fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData });
+    } catch (err) {
+      console.warn('Web3Forms error (non-critical):', err);
+    }
+  } else {
+    // Fallback mailto (should not happen because key is set)
+    const body = `New Order — Masale Arpan\n\nOrder ID: ${ordId}\n\nCustomer Details:\nName: ${name}\nPhone: ${phone}\nEmail: ${email || 'Not provided'}\n\nDelivery Address:\n${addrLine}\n${note ? 'Note: '+note : ''}\n\nItems Ordered:\n${itemsText}\nSubtotal: ₹${sub}\nDelivery: ${del===0?'FREE':'₹'+del}${disc>0 ? `\nPromo Discount: -₹${disc}` : ''}\nTotal: ₹${tot}\nPayment Method: ${payMethod.toUpperCase()}\n\nThank you!`;
+    window.location.href = `mailto:${OWNER_EMAIL}?subject=New Order ${ordId} from ${name}&body=${encodeURIComponent(body)}`;
+  }
+
+  // WhatsApp order if selected
+  if(payMethod === 'wa') {
+    const waMsg = encodeURIComponent(`Hi Masale Arpan! 🌶\nI'd like to place an order.\n\nOrder ID: ${ordId}\nName: ${name}\nPhone: ${phone}\nAddress: ${addrLine}\n\nItems:\n${ids.map(k=>`- ${cart[k].p.name} (${cart[k].p.weight}) × ${cart[k].qty} = ₹${cart[k].p.price*cart[k].qty}`).join('\n')}\n\nTotal: ₹${tot}`);
+    window.open(`https://wa.me/${WA_NUMBER}?text=${waMsg}`, '_blank');
+  }
+
+  // Show success screen
+  document.getElementById('order-id').textContent = 'Order #'+ordId;
+  document.getElementById('success-addr-text').textContent = addrLine;
+  const waTrack = document.getElementById('wa-track');
+  waTrack.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hi! I placed an order '+ordId+'. Can you share the tracking update?')}`;
+  document.getElementById('checkout-form').style.display = 'none';
+  document.getElementById('success-section').style.display = 'block';
+  document.getElementById('success-section').scrollIntoView({behavior:'smooth'});
+  cart = {};
+  renderCart();
+}
+
 function shopAgain(){ document.getElementById('success-section').style.display='none'; window.scrollTo({top:0,behavior:'smooth'}); }
 renderProducts('all');
 </script>
