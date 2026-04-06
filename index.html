@@ -1,408 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masale Arpan | Authentic Hand-Pounded Spices</title>
-    <style>
-        :root {
-            --primary: #d35400;
-            --dark: #2c3e50;
-            --light: #ecf0f1;
-            --white: #ffffff;
-            --whatsapp: #25D366;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masale Arpan</title>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+<style>
+body {
+  margin:0;
+  font-family: Arial;
+  background:#fff7f0;
+}
 
-        body {
-            background-color: var(--light);
-            color: var(--dark);
-        }
+header {
+  background:#b5400a;
+  color:white;
+  padding:15px;
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+}
 
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=2070&auto=format&fit=crop') center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            color: var(--white);
-        }
+.hero {
+  padding:30px;
+  text-align:center;
+}
 
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
+.hero h1 {
+  font-size:32px;
+  margin-bottom:10px;
+}
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
+.hero p {
+  font-size:14px;
+  color:#444;
+}
 
-        .btn {
-            padding: 15px 30px;
-            background-color: var(--primary);
-            color: var(--white);
-            text-decoration: none;
-            border: none;
-            border-radius: 25px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
+.products {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+  padding:20px;
+}
 
-        .btn:hover {
-            background-color: #a04000;
-        }
+.card {
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  text-align:center;
+}
 
-        /* Products Section */
-        .products-section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+button {
+  background:#b5400a;
+  color:white;
+  border:none;
+  padding:8px 12px;
+  border-radius:5px;
+  cursor:pointer;
+}
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2rem;
-        }
+.cart {
+  padding:20px;
+  background:white;
+}
 
-        .carousel {
-            display: flex;
-            overflow-x: auto;
-            gap: 20px;
-            padding-bottom: 20px;
-            scroll-snap-type: x mandatory;
-        }
-
-        .product-card {
-            flex: 0 0 280px;
-            background: var(--white);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            scroll-snap-align: start;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .product-info {
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            justify-content: space-between;
-        }
-
-        .product-title {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .product-price {
-            font-weight: bold;
-            color: var(--primary);
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-
-        /* Cart & Checkout Section */
-        .checkout-section {
-            background: var(--white);
-            padding: 60px 20px;
-            max-width: 800px;
-            margin: 0 auto 60px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .cart-items {
-            margin-bottom: 30px;
-            min-height: 50px;
-        }
-
-        .cart-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        /* WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: var(--whatsapp);
-            color: var(--white);
-            border-radius: 50px;
-            padding: 15px 25px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .whatsapp-float:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .product-card { flex: 0 0 250px; }
-        }
-    </style>
+.toast {
+  position:fixed;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:black;
+  color:white;
+  padding:10px 20px;
+  border-radius:20px;
+}
+</style>
 </head>
+
 <body>
 
-    <header class="hero">
-        <h1>Masale Arpan</h1>
-        <p>Authentic, Cold-Pounded Spices Delivered Fresh</p>
-        <a href="#products" class="btn">Shop Now</a>
-    </header>
+<header>🌶 Masale Arpan</header>
 
-    <section id="products" class="products-section">
-        <h2 class="section-title">Our Pure Spices</h2>
-        <div class="carousel">
-            
-            <div class="product-card">
-                <img src="https://i.ibb.co/93yYwWpy/Untitled-design-20260406-130958-0000.png" alt="Haldi Powder 50g">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">Haldi Powder (50g)</h3>
-                        <p class="product-price">₹25</p>
-                    </div>
-                    <button class="btn" onclick="addToCart('Haldi Powder 50g', 25)">Add to Cart</button>
-                </div>
-            </div>
+<div class="hero">
+  <h1>Asli Kuta Hua Masala</h1>
+  <p>
+  Na factory ka powder, na machine ki garam pisai.<br>
+  Yeh hai asli ghar jaisa swaad.
+  </p>
+</div>
 
-            <div class="product-card">
-                <img src="https://i.ibb.co/rRjf7tBg/Untitled-design-20260406-131846-0000.png" alt="Coriander Powder 50g">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">Coriander Powder (50g)</h3>
-                        <p class="product-price">₹20</p>
-                    </div>
-                    <button class="btn" onclick="addToCart('Coriander Powder 50g', 20)">Add to Cart</button>
-                </div>
-            </div>
+<div class="products" id="products"></div>
 
-            <div class="product-card">
-                <img src="https://i.ibb.co/ynN6mW5B/Untitled-design-20260406-132404-0000.png" alt="Lal Mirch Powder 50g">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">Lal Mirch Powder (50g)</h3>
-                        <p class="product-price">₹35</p>
-                    </div>
-                    <button class="btn" onclick="addToCart('Lal Mirch Powder 50g', 35)">Add to Cart</button>
-                </div>
-            </div>
+<div class="cart">
+  <h3>🛒 Cart</h3>
+  <div id="cart"></div>
+  <br>
+  <button onclick="placeOrder()">Order on WhatsApp</button>
+</div>
 
-            <div class="product-card">
-                <img src="https://i.ibb.co/b5p2d2Sv/Untitled-design-20260406-131147-0000.png" alt="Haldi Powder 100g">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">Haldi Powder (100g)</h3>
-                        <p class="product-price">₹45</p>
-                    </div>
-                    <button class="btn" onclick="addToCart('Haldi Powder 100g', 45)">Add to Cart</button>
-                </div>
-            </div>
+<script>
 
-            <div class="product-card">
-                <img src="https://i.ibb.co/7tjFqRXL/Untitled-design-20260406-132146-0000.png" alt="Coriander Powder 100g">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">Coriander Powder (100g)</h3>
-                        <p class="product-price">₹39</p>
-                    </div>
-                    <button class="btn" onclick="addToCart('Coriander Powder 100g', 39)">Add to Cart</button>
-                </div>
-            </div>
+const WA_NUMBER = "919266095118";
 
-            <div class="product-card">
-                <img src="https://i.ibb.co/wqj0PZ2/Untitled-design-20260406-132507-0000.png" alt="Lal Mirch Powder 100g">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">Lal Mirch Powder (100g)</h3>
-                        <p class="product-price">₹65</p>
-                    </div>
-                    <button class="btn" onclick="addToCart('Lal Mirch Powder 100g', 65)">Add to Cart</button>
-                </div>
-            </div>
+const PRODUCTS = [
+  {id:1,name:"Haldi 100g",price:45},
+  {id:2,name:"Dhaniya 100g",price:39},
+  {id:3,name:"Lal Mirch 100g",price:65}
+];
 
-            <div class="product-card">
-                <img src="https://i.ibb.co/mr4HPkTZ/Untitled-design-20260406-131326-0000.png" alt="Haldi Powder 250g">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">Haldi Powder (250g)</h3>
-                        <p class="product-price">₹99</p>
-                    </div>
-                    <button class="btn" onclick="addToCart('Haldi Powder 250g', 99)">Add to Cart</button>
-                </div>
-            </div>
+let cart = {};
 
-            <div class="product-card">
-                <img src="https://i.ibb.co/7tjFqRXL/Untitled-design-20260406-132146-0000.png" alt="Coriander Powder 250g">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">Coriander Powder (250g)</h3>
-                        <p class="product-price">₹89</p>
-                    </div>
-                    <button class="btn" onclick="addToCart('Coriander Powder 250g', 89)">Add to Cart</button>
-                </div>
-            </div>
+function renderProducts(){
+  let html='';
+  PRODUCTS.forEach(p=>{
+    html+=`
+      <div class="card">
+        <h4>${p.name}</h4>
+        <p>₹${p.price}</p>
+        <button onclick="addToCart(${p.id})">Add</button>
+      </div>
+    `;
+  });
+  document.getElementById('products').innerHTML=html;
+}
 
-            <div class="product-card">
-                <img src="https://i.ibb.co/jPCR4JC8/Untitled-design-20260406-132544-0000.png" alt="Lal Mirch Powder 250g">
-                <div class="product-info">
-                    <div>
-                        <h3 class="product-title">Lal Mirch Powder (250g)</h3>
-                        <p class="product-price">₹149</p>
-                    </div>
-                    <button class="btn" onclick="addToCart('Lal Mirch Powder 250g', 149)">Add to Cart</button>
-                </div>
-            </div>
+function addToCart(id){
+  const p = PRODUCTS.find(x=>x.id===id);
+  if(cart[id]) cart[id].qty++;
+  else cart[id]={...p,qty:1};
 
-        </div>
-    </section>
+  renderCart();
+  showToast("Added to cart ✅");
+}
 
-    <section class="checkout-section" id="checkout">
-        <h2 class="section-title">Your Cart</h2>
-        <div class="cart-items" id="cart-display">
-            <p style="text-align: center; color: #7f8c8d;">Your cart is currently empty.</p>
-        </div>
-        <h3 style="text-align: right; margin-bottom: 20px;">Total: ₹<span id="cart-total">0</span></h3>
+function renderCart(){
+  let html='';
+  let total=0;
 
-        <form id="orderForm" onsubmit="submitOrder(event)">
-            <div class="form-group">
-                <label for="custName">Full Name</label>
-                <input type="text" id="custName" required placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="custPhone">Phone Number</label>
-                <input type="tel" id="custPhone" required placeholder="Enter your mobile number">
-            </div>
-            <button type="submit" class="btn" style="width: 100%;">Place Order via Email</button>
-        </form>
-    </section>
+  Object.values(cart).forEach(i=>{
+    total += i.price*i.qty;
+    html+=${i.name} x ${i.qty} = ₹${i.price*i.qty}<br>;
+  });
 
-    <a href="https://wa.me/919266095118" class="whatsapp-float" target="_blank">
-        Chat on WhatsApp
-    </a>
+  html+=<br><b>Total: ₹${total}</b>;
 
-    <script>
-        let cart = [];
-        let total = 0;
-        
-        // Business Email Integrated
-        const ownerEmail = "arpanment@gmail.com"; 
+  document.getElementById('cart').innerHTML=html;
+}
 
-        function addToCart(itemName, itemPrice) {
-            // Check if item already exists in cart to update quantity
-            let existingItem = cart.find(item => item.name === itemName);
-            if (existingItem) {
-                existingItem.quantity += 1;
-            } else {
-                cart.push({ name: itemName, price: itemPrice, quantity: 1 });
-            }
-            
-            total += itemPrice;
-            updateCartDisplay();
-            
-            // Show message to customer
-            alert(${itemName} Cart me add ho gaya hai! Neeche jake apna form bharein aur order place karein.);
-        }
+function placeOrder(){
 
-        function updateCartDisplay() {
-            const cartContainer = document.getElementById('cart-display');
-            const totalDisplay = document.getElementById('cart-total');
-            
-            if (cart.length === 0) {
-                cartContainer.innerHTML = '<p style="text-align: center; color: #7f8c8d;">Your cart is currently empty.</p>';
-                return;
-            }
+  if(Object.keys(cart).length===0){
+    alert("Cart empty hai");
+    return;
+  }
 
-            cartContainer.innerHTML = '';
-            cart.forEach((item, index) => {
-                let itemTotal = item.price * item.quantity;
-                cartContainer.innerHTML += `
-                    <div class="cart-item">
-                        <span>${item.name} <b>(Quantity: ${item.quantity})</b></span>
-                        <span>₹${itemTotal}</span>
-                    </div>
-                `;
-            });
-            totalDisplay.innerText = total;
-        }
+  let msg = "🌶 Masale Arpan Order\n\n";
 
-        function submitOrder(e) {
-            e.preventDefault();
-            
-            if (cart.length === 0) {
-                alert("Please add items to your cart before ordering.");
-                return;
-            }
+  let total=0;
 
-            const name = document.getElementById('custName').value;
-            const phone = document.getElementById('custPhone').value;
-            
-            let orderDetails = "New Order for Masale Arpan%0D%0A%0D%0A";
-            orderDetails += Customer Name: ${name}%0D%0A;
-            orderDetails += Phone: ${phone}%0D%0A%0D%0A;
-            orderDetails += "Items Ordered:%0D%0A";
-            
-            cart.forEach(item => {
-                let itemTotal = item.price * item.quantity;
-                orderDetails += - ${item.name} x ${item.quantity} = ₹${itemTotal}%0D%0A;
-            });
-            
-            orderDetails += %0D%0ATotal Amount: ₹${total};
+  Object.values(cart).forEach(i=>{
+    msg+=${i.name} x ${i.qty} = ₹${i.price*i.qty}\n;
+    total+=i.price*i.qty;
+  });
 
-            // This opens the user's default email client with details and quantity
-            window.location.href = mailto:${ownerEmail}?subject=New Order from ${name}&body=${orderDetails};
-        }
-    </script>
+  msg+=\nTotal: ₹${total};
+
+  window.open(https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)});
+}
+
+function showToast(msg){
+  let t=document.createElement('div');
+  t.className='toast';
+  t.innerText=msg;
+  document.body.appendChild(t);
+  setTimeout(()=>t.remove(),2000);
+}
+
+renderProducts();
+
+</script>
+
 </body>
 </html>
