@@ -25,10 +25,10 @@
             color: var(--dark);
         }
 
-        /* Hero Section */
+        /* Hero Section - Updated with Masala Image */
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.ibb.co/bR8R0BvV/IMG-0895.jpg') center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=2070&auto=format&fit=crop') center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -340,10 +340,19 @@
         const ownerEmail = "arpanment@gmail.com"; 
 
         function addToCart(itemName, itemPrice) {
-            cart.push({ name: itemName, price: itemPrice });
+            // Check if item already exists in cart to update quantity
+            let existingItem = cart.find(item => item.name === itemName);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ name: itemName, price: itemPrice, quantity: 1 });
+            }
+            
             total += itemPrice;
             updateCartDisplay();
-            alert(${itemName} added to cart!);
+            
+            // Show message to customer
+            alert(${itemName} Cart me add ho gaya hai! Neeche jake apna form bharein aur order place karein.);
         }
 
         function updateCartDisplay() {
@@ -357,10 +366,11 @@
 
             cartContainer.innerHTML = '';
             cart.forEach((item, index) => {
+                let itemTotal = item.price * item.quantity;
                 cartContainer.innerHTML += `
                     <div class="cart-item">
-                        <span>${item.name}</span>
-                        <span>₹${item.price}</span>
+                        <span>${item.name} <b>(Quantity: ${item.quantity})</b></span>
+                        <span>₹${itemTotal}</span>
                     </div>
                 `;
             });
@@ -384,14 +394,15 @@
             orderDetails += "Items Ordered:%0D%0A";
             
             cart.forEach(item => {
-                orderDetails += - ${item.name} (₹${item.price})%0D%0A;
+                let itemTotal = item.price * item.quantity;
+                orderDetails += - ${item.name} x ${item.quantity} = ₹${itemTotal}%0D%0A;
             });
             
             orderDetails += %0D%0ATotal Amount: ₹${total};
 
-            // This opens the user's default email client
+            // This opens the user's default email client with details and quantity
             window.location.href = mailto:${ownerEmail}?subject=New Order from ${name}&body=${orderDetails};
         }
     </script>
 </body>
-</html
+</html>
