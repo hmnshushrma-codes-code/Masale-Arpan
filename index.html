@@ -365,7 +365,8 @@ const PRODUCTS = [
 const OWNER_EMAIL = 'arpanment@gmail.com';
 const WA_NUMBER = '919266095118';
 const WEB3FORMS_KEY = '7403e750-e0e1-47ad-af49-2d4d10ef4f2b';   // Your active key
-const UPI_ID = 'paytmqr1uf61g9477@paytm';   // change here if your UPI ID changes
+const UPI_ID = 'paytmqr1uf61g9477@paytm';   // your Paytm Business UPI ID
+const PAYTM_QR_IMG = 'paytm-qr.png';   // download your QR from Paytm for Business and upload it next to index.html with this name
 const SHOW_RATINGS = false;   // keep false until you have real customer reviews
 const WELCOME50_MIN = 299;   // minimum cart for WELCOME50
 
@@ -491,10 +492,9 @@ async function placeOrder() {
   payBox.style.display = 'none'; payBox.innerHTML = '';
   succMsg.textContent = 'Thank you! Your order has been received and will be dispatched within 24 hours.'; etaStatus.textContent = 'Confirmed';
   if (payMethod === 'upi') {
-    const upiLink = `upi://pay?pa=${UPI_ID}&pn=${encodeURIComponent('Masale Arpan')}&am=${tot}&cu=INR`;
-    const qrSrc = 'https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=' + encodeURIComponent(upiLink);
     succMsg.textContent = 'Order received. We will dispatch it as soon as your payment is confirmed.'; etaStatus.textContent = 'Awaiting payment';
-    payBox.innerHTML = `<div style="font-weight:700;color:#1e1209;margin-bottom:8px">Pay ₹${tot} by UPI</div><img src="${qrSrc}" alt="UPI QR for ₹${tot}" width="220" height="220" style="max-width:100%;border-radius:8px;background:#fff;padding:6px"><div style="margin:10px 0 6px"><a href="${upiLink}" style="display:inline-block;background:#b5400a;color:#fff;padding:10px 22px;border-radius:30px;text-decoration:none;font-weight:600">Pay with UPI app</a></div><div style="font-size:12px;color:#5c3d1e">UPI ID: ${UPI_ID}<br>After paying, send the screenshot on WhatsApp with order #${ordId}.</div>`;
+    payBox.innerHTML = `<div style="font-weight:700;color:#1e1209;margin-bottom:4px">Pay ₹${tot} to Masale Arpan</div><div style="font-size:13px;color:#5c3d1e;margin-bottom:10px">Scan this Paytm QR with any UPI app and <b>enter ₹${tot}</b> as the amount.</div><img src="${PAYTM_QR_IMG}" alt="Paytm QR for Masale Arpan" width="220" style="max-width:100%;border-radius:8px;background:#fff;padding:6px" onerror="this.style.display='none'"><div style="margin-top:10px"><button type="button" id="copy-upi" style="background:#b5400a;color:#fff;border:0;padding:9px 20px;border-radius:30px;font-weight:600;cursor:pointer">Copy UPI ID</button></div><div style="font-size:12px;color:#5c3d1e;margin-top:8px">UPI ID: ${UPI_ID}<br>On a phone? Copy the UPI ID and paste it in your UPI app.<br>After paying, send the screenshot on WhatsApp with order #${ordId}.</div>`;
+    const cb = document.getElementById('copy-upi'); if (cb) cb.onclick = () => { try { navigator.clipboard.writeText(UPI_ID); cb.textContent = 'Copied ✓'; } catch(e) { cb.textContent = UPI_ID; } };
     payBox.style.display = 'block';
   } else if (payMethod === 'bank') {
     succMsg.textContent = 'Order received. We will send our bank details on WhatsApp shortly; dispatch happens after payment.'; etaStatus.textContent = 'Awaiting payment';
