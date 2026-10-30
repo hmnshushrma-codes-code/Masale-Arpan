@@ -314,7 +314,21 @@ footer strong{color:rgba(255,255,255,0.8)}
 .about-machine-note img{max-width:100%;margin-top:8px;border-radius:8px}
 .about-text-col{}
 .about-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary-light);margin-bottom:12px}
-.about-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:16px}<body>
+.about-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:16px}
+.about-title em{color:var(--primary-light);font-style:normal}
+.about-body{font-size:14px;color:rgba(255,255,255,0.65);line-height:1.8;font-weight:300;margin-bottom:20px}
+.about-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.afact{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:12px 14px}
+.afact-val{font-size:16px;font-weight:700;color:#fff;font-family:'Playfair Display',serif;margin-bottom:2px}
+.afact-lbl{font-size:11px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.05em}
+.fssai-bar{margin-top:14px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 14px;display:flex;align-items:center;gap:10px}
+.fssai-logo{font-size:22px}
+.fssai-text{font-size:11px;color:rgba(255,255,255,0.55);line-height:1.6}
+.fssai-text strong{color:rgba(255,255,255,0.85);display:block;font-size:12px}
+@media(max-width:640px){.about-inner{grid-template-columns:1fr}.about-facts{grid-template-columns:1fr 1fr}.nav-links{display:none}.fgrid{grid-template-columns:1fr}.fgrid .full{grid-column:1}.pay-opts{grid-template-columns:1fr}.eta-grid{grid-template-columns:1fr 1fr}.success-actions{flex-direction:column}.hero-badges{display:none}}
+</style>
+</head>
+<body>
 
 <nav><div class="nav-inner"><a class="nav-logo" href="#"><div class="nav-logo-icon"><img src="https://i.ibb.co/G46tDhKk/Masale-Arpanlogo.jpg" alt="Masale Arpan Logo"></div><div class="nav-logo-text">Masale Arpan<span>Gurugram · Est. April 2026</span></div></a><div class="nav-links"><a href="#products">Products</a><a href="#about">About Us</a><a href="#checkout">Cart</a><a href="https://wa.me/919266095118" target="_blank">WhatsApp</a></div><button class="nav-cart" onclick="scrollToCart()"><svg viewBox="0 0 20 20" fill="none" width="15" height="15"><path d="M1 1h3l2.5 10h9L18 5H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="17" r="1.2" fill="currentColor"/><circle cx="15" cy="17" r="1.2" fill="currentColor"/></svg> Cart <span class="cnt" id="nav-cnt">0</span></button></div></nav>
 
